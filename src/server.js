@@ -28,5 +28,10 @@ app.use((error, request, response, next) => {
   })
 })
 
+// const server = app.listen(0, () => {
+//   const { port } = server.address();
+//   console.log(`Servidor rodando na porta ${port}`);
+// });
+
 const PORT = 3333
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`))
